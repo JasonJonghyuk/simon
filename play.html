@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon</title>
     <link rel="icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="main.css" />
+
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
     />
   </head>
   <body class="bg-dark text-light">
@@ -41,6 +43,8 @@
       </div>
       <div class="game">
         <div class="button-container">
+          <!-- buttons are discovered in the JavaScript by selecting the game-button class -->
+          <!-- onclick triggers a button push interaction -->
           <button id="green" class="game-button button-top-left" onclick="game.pressButton(this)"></button>
           <button id="red" class="game-button button-top-right" onclick="game.pressButton(this)"></button>
           <button id="yellow" class="game-button button-bottom-left" onclick="game.pressButton(this)"></button>
@@ -53,14 +57,15 @@
         </div>
       </div>
     </main>
+
     <footer class="bg-dark text-dark text-muted">
       <div class="container-fluid">
-        <span class="text-reset">Jonghyuk Lee</span>
-        <a
-          class="text-reset"
-          href="https://github.com/JasonJonghyuk/simon.git">GitHub</a>
+        <span class="text-reset">Author Name(s)</span>
+        <a class="text-reset" href="https://github.com/webprogramming260/simon-javascript">Source</a>
       </div>
     </footer>
+
+    <!-- Script is located at the bottom because it references HTML elements during initialization -->
     <script src="play.js"></script>
   </body>
 </html>
